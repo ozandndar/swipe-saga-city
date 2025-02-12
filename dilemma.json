@@ -1,0 +1,953 @@
+[
+    {
+      "id": "alienDanceOffDiplomacy",
+      "swipe_right_stats": { "happiness": 15, "budget": -10, "environment": 0 },
+      "swipe_left_stats": { "happiness": -20, "budget": 5, "environment": 0 },
+      "extra_effect_right_stats": { "bonus_type": "happiness", "bonus": 50 },
+      "extra_effect_left_stats": { "bonus_type": "budget", "bonus": -25 },
+      "en": {
+        "title": "Alien Dance-Off Diplomacy",
+        "description": "Aliens demand a city-wide dance competition for peace talks. Risk budget or happiness?",
+        "swipe_right": "Host Dance-Off: Happiness +15%, Budget -10%",
+        "swipe_left": "Decline Dance-Off: Budget +5%, Happiness -20%",
+        "extra_effect_right": "During the dance event, an alien and a human fall in love and marry, granting a 50% bonus on happiness choices for the next 2 days.",
+        "extra_effect_left": "After rejecting the event, alien citizens cause chaos on the streets, imposing a 25% penalty on budget choices for the next day."
+      },
+      "tr": {
+        "title": "Uzaylı Dans Kapışması Diplomasisi",
+        "description": "Uzaylılar, şehir çapında barış görüşmeleri için dans yarışması düzenlenmesini talep ediyor. Bütçe mi, mutluluk mu riske atılacak?",
+        "swipe_right": "Dans Kapışması Düzenle",
+        "swipe_left": "Dans Kapışmasını Redde",
+        "extra_effect_right": "Dans etkinliği sırasında, bir uzaylı ile bir insan aşık olup evlenir, sonraki 2 gün boyunca mutluluk seçimlerinde %50 bonus sağlar.",
+        "extra_effect_left": "Etkinliği reddettikten sonra, uzaylı vatandaşlar sokaklarda kaos çıkarır; kaza faturaları, sonraki gün için bütçe seçimlerinde %25 ceza uygular."
+      },
+      "es": {
+        "title": "Diplomacia del Baile con Extraterrestres",
+        "description": "Los alienígenas exigen un concurso de baile en toda la ciudad para las negociaciones de paz. ¿Arriesgas el presupuesto o la felicidad?",
+        "swipe_right": "Organiza el Dance-Off: Felicidad +15%, Presupuesto -10%",
+        "swipe_left": "Rechaza el Dance-Off: Presupuesto +5%, Felicidad -20%",
+        "extra_effect_right": "Durante el evento de baile, un alienígena y un humano se enamoran y se casan, otorgando un bono del 50% en las elecciones de felicidad durante los siguientes 2 días.",
+        "extra_effect_left": "Tras rechazar el evento, los ciudadanos alienígenas causan caos en las calles, imponiendo una penalización del 25% en las elecciones de presupuesto para el día siguiente."
+      },
+      "fr": {
+        "title": "Diplomatie du Dance-Off Extraterrestre",
+        "description": "Les extraterrestres exigent un concours de danse à l'échelle de la ville pour des négociations de paix. Risquez-vous le budget ou le bonheur ?",
+        "swipe_right": "Organisez le Dance-Off : Bonheur +15%, Budget -10%",
+        "swipe_left": "Refusez le Dance-Off : Budget +5%, Bonheur -20%",
+        "extra_effect_right": "Lors de l'événement de danse, un extraterrestre et un humain tombent amoureux et se marient, accordant un bonus de 50 % sur les choix de bonheur pour les 2 prochains jours.",
+        "extra_effect_left": "Après avoir rejeté l'événement, des citoyens extraterrestres provoquent le chaos dans les rues, entraînant une pénalité de 25 % sur les choix de budget pour le lendemain."
+      },
+      "de": {
+        "title": "Außerirdische Tanz-Diplomatie",
+        "description": "Außerirdische verlangen einen stadtweiten Tanzwettbewerb für Friedensgespräche. Setzen Sie das Budget oder das Glück aufs Spiel?",
+        "swipe_right": "Veranstalten Sie den Tanzwettbewerb: Glück +15%, Haushalt -10%",
+        "swipe_left": "Lehnen Sie den Tanzwettbewerb ab: Haushalt +5%, Glück -20%",
+        "extra_effect_right": "Während des Tanz-Events verlieben sich ein Außerirdischer und ein Mensch und heiraten, was für die nächsten 2 Tage einen Bonus von 50 % auf Glücksentscheidungen gewährt.",
+        "extra_effect_left": "Nachdem das Event abgelehnt wurde, verursachen außerirdische Bürger auf den Straßen Chaos, was zu einer 25%igen Strafe auf Haushaltsentscheidungen für den nächsten Tag führt."
+      },
+      "it": {
+        "title": "Diplomazia del Ballo Aliena",
+        "description": "Gli alieni richiedono una gara di ballo in tutta la città per i colloqui di pace. Rischi il budget o la felicità?",
+        "swipe_right": "Organizza il Dance-Off: Felicità +15%, Budget -10%",
+        "swipe_left": "Rifiuta il Dance-Off: Budget +5%, Felicità -20%",
+        "extra_effect_right": "Durante l'evento di danza, un alieno e un umano si innamorano e si sposano, concedendo un bonus del 50% sulle scelte di felicità per i prossimi 2 giorni.",
+        "extra_effect_left": "Dopo il rifiuto, i cittadini alieni scatenano il caos nelle strade, imponendo una penalità del 25% sulle scelte di budget per il giorno successivo."
+      },
+      "pt": {
+        "title": "Diplomacia do Dance-Off Alienígena",
+        "description": "Os alienígenas exigem um concurso de dança em toda a cidade para negociações de paz. Arrisca o orçamento ou a felicidade?",
+        "swipe_right": "Organize o Dance-Off: Felicidade +15%, Orçamento -10%",
+        "swipe_left": "Recuse o Dance-Off: Orçamento +5%, Felicidade -20%",
+        "extra_effect_right": "Durante o evento de dança, um alienígena e um humano se apaixonam e se casam, concedendo um bônus de 50% nas escolhas de felicidade pelos próximos 2 dias.",
+        "extra_effect_left": "Após o recusa, os cidadãos alienígenas causam caos nas ruas, impondo uma penalidade de 25% nas escolhas de orçamento para o dia seguinte."
+      },
+      "ja": {
+        "title": "エイリアンダンスオフ外交",
+        "description": "エイリアンが市全体のダンスコンテストを要求。予算か幸福かをリスクにさらす？",
+        "swipe_right": "ダンスオフを開催：幸福 +15%、予算 -10%",
+        "swipe_left": "ダンスオフを拒否：予算 +5%、幸福 -20%",
+        "extra_effect_right": "ダンスイベント中に、エイリアンと人間が恋に落ち結婚し、次の2日間、幸福選択に50%のボーナスをもたらす。",
+        "extra_effect_left": "イベント拒否後、エイリアン市民が通りで混乱を引き起こし、翌日の予算選択に25%のペナルティを課す。"
+      },
+      "zh": {
+        "title": "外星人舞会外交",
+        "description": "外星人要求举办全市范围的舞蹈比赛以进行和平谈判。你会冒预算还是幸福的风险？",
+        "swipe_right": "举办舞蹈对决：幸福 +15%，预算 -10%",
+        "swipe_left": "拒绝舞蹈对决：预算 +5%，幸福 -20%",
+        "extra_effect_right": "在舞蹈活动中，一位外星人与一位人类相爱并结婚，为接下来两天的幸福选择提供50%的加成。",
+        "extra_effect_left": "拒绝活动后，外星市民制造混乱，导致车祸，翌日预算选择受25%惩罚。"
+      },
+      "ru": {
+        "title": "Танцевальная дипломатия с инопланетянами",
+        "description": "Инопланетяне требуют провести танцевальное состязание по всему городу для переговоров о мире. Рисковать бюджетом или счастьем?",
+        "swipe_right": "Провести танцевальное состязание: Счастье +15%, Бюджет -10%",
+        "swipe_left": "Отказаться от состязания: Бюджет +5%, Счастье -20%",
+        "extra_effect_right": "Во время мероприятия инопланетянин и человек влюбляются и женятся, давая бонус 50% на счастье на следующие 2 дня.",
+        "extra_effect_left": "После отказа от мероприятия инопланетяне создают хаос на улицах, налагая штраф 25% на бюджетные решения на следующий день."
+      },
+      "hi": {
+        "title": "एलियन डांस-ऑफ कूटनीति",
+        "description": "एलियंस शांति वार्ताओं के लिए शहरभर में डांस प्रतियोगिता की मांग करते हैं। बजट या खुशी में से किसे जोखिम में डालना है?",
+        "swipe_right": "डांस-ऑफ आयोजित करें: खुशी +15%, बजट -10%",
+        "swipe_left": "डांस-ऑफ अस्वीकार करें: बजट +5%, खुशी -20%",
+        "extra_effect_right": "डांस इवेंट के दौरान, एक एलियन और एक इंसान प्यार में पड़ जाते हैं और शादी कर लेते हैं, जिससे अगले 2 दिनों के लिए खुशी विकल्पों पर 50% बोनस मिलता है।",
+        "extra_effect_left": "इवेंट अस्वीकार के बाद, एलियन नागरिक सड़कों पर अराजकता मचाते हैं, जिससे अगले दिन बजट विकल्पों पर 25% दंड लगता है।"
+      }
+    },
+    {
+      "id": "mandatoryRobotPets",
+      "swipe_right_stats": { "happiness": -15, "budget": 0, "environment": 10 },
+      "swipe_left_stats": { "happiness": 10, "budget": 0, "environment": -5 },
+      "extra_effect_right_stats": { "bonus_type": "environment", "bonus": 50 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": 25 },
+      "en": {
+        "title": "Mandatory Robot Pets",
+        "description": "A law proposes replacing real pets with AI-controlled robots to reduce allergies. Your move!",
+        "swipe_right": "Enforce Robots: Environment +10%, Happiness -15%",
+        "swipe_left": "Allow Real Pets: Happiness +10%, Environment -5%",
+        "extra_effect_right": "Robots parade the streets, boosting environmental performance by 50% for the next 2 days.",
+        "extra_effect_left": "Allowing real pets increases happiness by 25% for the next 2 days."
+      },
+      "tr": {
+        "title": "Zorunlu Robot Evcil Hayvanlar",
+        "description": "Gerçek evcil hayvanları, alerjileri azaltmak için yapay zekâ kontrollü robotlarla değiştirmeyi öneren bir yasa var. Karar senin!",
+        "swipe_right": "Robotları Uygula: Çevre +10%, Mutluluk -15%",
+        "swipe_left": "Gerçek Evcil Hayvanlara İzin Ver: Mutluluk +10%, Çevre -5%",
+        "extra_effect_right": "Robotlar sokaklarda gururla yürür, otantiklik tartışmalarını ateşler; sonraki 2 gün için çevre performansında %50 artış sağlar.",
+        "extra_effect_left": "Gerçek evcil hayvanlara izin vermek, 2 gün boyunca mutluluğu %25 artırır."
+      },
+      "es": {
+        "title": "Mascotas Robot Obligatorias",
+        "description": "Una ley propone reemplazar las mascotas reales con robots controlados por IA para reducir alergias. ¡La decisión es tuya!",
+        "swipe_right": "Implementa Robots: Medio ambiente +10%, Felicidad -15%",
+        "swipe_left": "Permite Mascotas Reales: Felicidad +10%, Medio ambiente -5%",
+        "extra_effect_right": "Los robots desfilan por las calles, aumentando el desempeño ambiental en un 50% durante 2 días.",
+        "extra_effect_left": "Permitir mascotas reales incrementa la felicidad en un 25% durante 2 días."
+      },
+      "fr": {
+        "title": "Animaux de Compagnie Robots Obligatoires",
+        "description": "Une loi propose de remplacer les animaux de compagnie réels par des robots IA pour réduire les allergies. À vous de décider !",
+        "swipe_right": "Appliquez les Robots : Environnement +10%, Bonheur -15%",
+        "swipe_left": "Autorisez les Animaux Réels : Bonheur +10%, Environnement -5%",
+        "extra_effect_right": "Les robots défilent dans les rues, augmentant la performance environnementale de 50 % pour 2 jours.",
+        "extra_effect_left": "Autoriser les animaux réels augmente le bonheur de 25 % pendant 2 jours."
+      },
+      "de": {
+        "title": "Pflicht-Roboterhaustiere",
+        "description": "Ein Gesetz schlägt vor, echte Haustiere durch KI-gesteuerte Roboter zu ersetzen, um Allergien zu reduzieren. Deine Entscheidung!",
+        "swipe_right": "Roboter Durchsetzen: Umwelt +10%, Glück -15%",
+        "swipe_left": "Echte Haustiere Zulassen: Glück +10%, Umwelt -5%",
+        "extra_effect_right": "Roboter marschieren durch die Straßen und steigern die Umweltleistung um 50 % für 2 Tage.",
+        "extra_effect_left": "Echte Haustiere erhöhen das Glück um 25 % für 2 Tage."
+      },
+      "it": {
+        "title": "Animali Domestici Robotici Obbligatori",
+        "description": "Una legge propone di sostituire gli animali domestici reali con robot controllati da IA per ridurre le allergie. Tocca a te decidere!",
+        "swipe_right": "Implementa Robot: Ambiente +10%, Felicità -15%",
+        "swipe_left": "Permetti Animali Veri: Felicità +10%, Ambiente -5%",
+        "extra_effect_right": "I robot sfilano per le strade, aumentando le prestazioni ambientali del 50% per 2 giorni.",
+        "extra_effect_left": "Consentire animali reali aumenta la felicità del 25% per 2 giorni."
+      },
+      "pt": {
+        "title": "Animais de Estimação Robóticos Obrigatórios",
+        "description": "Uma lei propõe substituir animais de estimação reais por robôs controlados por IA para reduzir alergias. A decisão é sua!",
+        "swipe_right": "Implemente Robôs: Ambiente +10%, Felicidade -15%",
+        "swipe_left": "Permita Animais Reais: Felicidade +10%, Ambiente -5%",
+        "extra_effect_right": "Os robôs desfilam pelas ruas, elevando a performance ambiental em 50% por 2 dias.",
+        "extra_effect_left": "Permitir animais reais aumenta a felicidade em 25% por 2 dias."
+      },
+      "ja": {
+        "title": "義務的なロボットペット",
+        "description": "アレルギーを減らすため、実際のペットをAI制御のロボットに置き換える法律が提案されています。あなたの判断は？",
+        "swipe_right": "ロボットを採用：環境 +10%、幸福 -15%",
+        "swipe_left": "実際のペットを許可：幸福 +10%、環境 -5%",
+        "extra_effect_right": "ロボットが通りを行進し、2日間環境パフォーマンスを50%向上させます。",
+        "extra_effect_left": "実際のペットの許可は、2日間幸福度を25%向上させます。"
+      },
+      "zh": {
+        "title": "强制机器人宠物",
+        "description": "一项法律提议用AI控制的机器人替换真实宠物以减少过敏反应。由你决定！",
+        "swipe_right": "实施机器人：环境 +10%，幸福 -15%",
+        "swipe_left": "允许真实宠物：幸福 +10%，环境 -5%",
+        "extra_effect_right": "机器人在街上巡游，使环境表现提升50%，持续2天。",
+        "extra_effect_left": "允许真实宠物使幸福度提升25%，持续2天。"
+      },
+      "ru": {
+        "title": "Обязательные Робо-Животные",
+        "description": "Закон предлагает заменить настоящих питомцев роботами под управлением ИИ для снижения аллергий. Решайте!",
+        "swipe_right": "Применить роботов: Окружающая среда +10%, Счастье -15%",
+        "swipe_left": "Разрешить настоящих животных: Счастье +10%, Окружающая среда -5%",
+        "extra_effect_right": "Роботы патрулируют улицы, повышая экологическую эффективность на 50% на 2 дня.",
+        "extra_effect_left": "Разрешение настоящих животных повышает счастье на 25% на 2 дня."
+      },
+      "hi": {
+        "title": "अनिवार्य रोबोट पालतू जानवर",
+        "description": "एक कानून वास्तविक पालतू जानवरों को एआई-नियंत्रित रोबोट से बदलने का प्रस्ताव देता है ताकि एलर्जी कम हो सके। आपकी बारी है!",
+        "swipe_right": "रोबोट लागू करें: पर्यावरण +10%, खुशी -15%",
+        "swipe_left": "वास्तविक पालतू जानवरों की अनुमति दें: खुशी +10%, पर्यावरण -5%",
+        "extra_effect_right": "रोबोट सड़कों पर घूमते हैं, जिससे अगले 2 दिनों के लिए पर्यावरण प्रदर्शन में 50% की वृद्धि होती है।",
+        "extra_effect_left": "वास्तविक पालतू जानवर खुशी को 25% बढ़ाते हैं, 2 दिनों के लिए।"
+      }
+    },
+    {
+      "id": "flyingCarTollLanes",
+      "swipe_right_stats": { "happiness": -10, "budget": 15, "environment": 0 },
+      "swipe_left_stats": { "happiness": 10, "budget": -5, "environment": 0 },
+      "extra_effect_right_stats": { "bonus_type": "budget", "bonus": 15 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": 10 },
+      "en": {
+        "title": "Flying Car Toll Lanes",
+        "description": "Citizens demand free aerial highways, but corporations want toll lanes for profit. Decide now.",
+        "swipe_right": "Approve Tolls: Budget +15%, Happiness -10%",
+        "swipe_left": "Reject Tolls: Happiness +10%, Budget -5%",
+        "extra_effect_right": "A corporate parade boosts the budget by 15% for the next day.",
+        "extra_effect_left": "A street party lifts happiness by 10% for the next day."
+      },
+      "tr": {
+        "title": "Uçan Araba Ücretli Şeritleri",
+        "description": "Vatandaşlar ücretsiz hava yolları talep ediyor, ancak şirketler kâr için ücretli şeritler istiyor. Karar senin!",
+        "swipe_right": "Ücretleri Onayla: Bütçe +15%, Mutluluk -10%",
+        "swipe_left": "Ücretleri Reddet: Mutluluk +10%, Bütçe -5%",
+        "extra_effect_right": "Canlı bir şirket geçit töreni artan geliri kutluyor, ancak sinirli yolcular yarın şikayet ediyor.",
+        "extra_effect_left": "Aniden patlak veren sokak partisi moral yükseltirken, kaçırılan gelir şehir hazinesini hafifletiyor."
+      },
+      "es": {
+        "title": "Peajes para Carriles de Coches Voladores",
+        "description": "Los ciudadanos exigen autopistas aéreas gratuitas, pero las corporaciones quieren peajes para obtener beneficios. ¡Decide ya!",
+        "swipe_right": "Aprobar Peajes: Presupuesto +15%, Felicidad -10%",
+        "swipe_left": "Rechazar Peajes: Felicidad +10%, Presupuesto -5%",
+        "extra_effect_right": "Un vibrante desfile corporativo aumenta el presupuesto en un 15% para el día siguiente.",
+        "extra_effect_left": "Una fiesta callejera eleva la felicidad en un 10% para el día siguiente."
+      },
+      "fr": {
+        "title": "Autoroutes Aériennes Payantes",
+        "description": "Les citoyens demandent des autoroutes aériennes gratuites, mais les entreprises veulent des péages pour réaliser des profits. À vous de décider !",
+        "swipe_right": "Approuver les Péages : Budget +15%, Bonheur -10%",
+        "swipe_left": "Refuser les Péages : Bonheur +10%, Budget -5%",
+        "extra_effect_right": "Un défilé d'entreprise dynamise le budget de 15% pour le lendemain.",
+        "extra_effect_left": "Une fête de rue spontanée augmente le bonheur de 10% pour le lendemain."
+      },
+      "de": {
+        "title": "Mautspuren für fliegende Autos",
+        "description": "Bürger fordern kostenlose Luftstraßen, aber Konzerne wollen Mautspuren für Profit. Entscheide mit einem Swipe!",
+        "swipe_right": "Maut genehmigen: Haushalt +15%, Glück -10%",
+        "swipe_left": "Maut ablehnen: Glück +10%, Haushalt -5%",
+        "extra_effect_right": "Ein Firmenumzug steigert den Haushalt um 15% für den nächsten Tag.",
+        "extra_effect_left": "Eine Straßenparty erhöht das Glück um 10% für den nächsten Tag."
+      },
+      "it": {
+        "title": "Corsie a Pedaggio per Auto Volanti",
+        "description": "I cittadini chiedono autostrade aeree gratuite, ma le aziende vogliono corsie a pedaggio per profitto. Decidi!",
+        "swipe_right": "Approva i Pedaggi: Budget +15%, Felicità -10%",
+        "swipe_left": "Rifiuta i Pedaggi: Felicità +10%, Budget -5%",
+        "extra_effect_right": "Una parata aziendale aumenta il budget del 15% per il giorno successivo.",
+        "extra_effect_left": "Una festa in strada eleva la felicità del 10% per il giorno successivo."
+      },
+      "pt": {
+        "title": "Pistas Pagas para Carros Voadores",
+        "description": "Os cidadãos exigem rodovias aéreas gratuitas, mas as corporações querem pistas pagas para lucro. Decida!",
+        "swipe_right": "Aprovar Pedágios: Orçamento +15%, Felicidade -10%",
+        "swipe_left": "Rejeitar Pedágios: Felicidade +10%, Orçamento -5%",
+        "extra_effect_right": "Um desfile corporativo aumenta o orçamento em 15% para o dia seguinte.",
+        "extra_effect_left": "Uma festa de rua eleva a felicidade em 10% para o dia seguinte."
+      },
+      "ja": {
+        "title": "飛行車の有料レーン",
+        "description": "市民は無料の空中高速道路を要求していますが、企業は利益のために有料レーンを望んでいます。決断してください！",
+        "swipe_right": "有料レーンを承認：予算 +15%、幸福 -10%",
+        "swipe_left": "有料レーンを拒否：幸福 +10%、予算 +5%",
+        "extra_effect_right": "活気ある企業パレードが翌日、予算を15%増加させます。",
+        "extra_effect_left": "突発的なストリートパーティーが翌日、幸福を10%増加させます。"
+      },
+      "zh": {
+        "title": "飞行汽车收费车道",
+        "description": "市民要求免费空中高速公路，但企业希望通过收费车道获利。请立即决定！",
+        "swipe_right": "批准收费：预算 +15%，幸福 -10%",
+        "swipe_left": "拒绝收费：幸福 +10%，预算 -5%",
+        "extra_effect_right": "企业游行使得预算在次日提升15%。",
+        "extra_effect_left": "街头派对使次日幸福提升10%。"
+      },
+      "ru": {
+        "title": "Платные полосы для летающих автомобилей",
+        "description": "Граждане требуют бесплатных воздушных автострад, но корпорации хотят платные полосы для получения прибыли. Решайте!",
+        "swipe_right": "Утвердить плату: Бюджет +15%, Счастье -10%",
+        "swipe_left": "Отклонить плату: Счастье +10%, Бюджет -5%",
+        "extra_effect_right": "Корпоративный парад повышает бюджет на 15% на следующий день.",
+        "extra_effect_left": "Уличная вечеринка повышает счастье на 10% на следующий день."
+      },
+      "hi": {
+        "title": "उड़ते कार टोल लेन",
+        "description": "नागरिक मुफ्त वायु राजमार्ग की मांग करते हैं, लेकिन कंपनियां मुनाफे के लिए टोल लेन चाहती हैं। निर्णय करें!",
+        "swipe_right": "टोल स्वीकृत करें: बजट +15%, खुशी -10%",
+        "swipe_left": "टोल अस्वीकृत करें: खुशी +10%, बजट -5%",
+        "extra_effect_right": "कॉर्पोरेट परेड अगले दिन बजट को 15% बढ़ाती है।",
+        "extra_effect_left": "सड़क पार्टी अगले दिन खुशी को 10% बढ़ाती है।"
+      }
+    },
+    {
+      "id": "verticalFarmingSkyscrapers",
+      "swipe_right_stats": { "happiness": 0, "budget": -15, "environment": 20 },
+      "swipe_left_stats": { "happiness": 0, "budget": 10, "environment": -10 },
+      "extra_effect_right_stats": { "bonus_type": "environment", "bonus": 20 },
+      "extra_effect_left_stats": { "bonus_type": "budget", "bonus": 10 },
+      "en": {
+        "title": "Vertical Farming Skyscrapers",
+        "description": "Build farms in skyscrapers to save land, but construction costs are sky-high. Approve?",
+        "swipe_right": "Build Farms: Environment +20%, Budget -15%",
+        "swipe_left": "Reject Farms: Budget +10%, Environment -10%",
+        "extra_effect_right": "The city transforms into a green metropolis, granting a 20% bonus on environment for 2 days.",
+        "extra_effect_left": "Funds are saved but the environment suffers, resulting in a 10% bonus on budget for 1 day."
+      },
+      "tr": {
+        "title": "Dikey Tarım Gökdelenleri",
+        "description": "Arazi tasarrufu için gökdelenlerde çiftlikler kurun, ancak inşaat maliyetleri çok yüksek. Onaylıyor musunuz?",
+        "swipe_right": "Çiftlikleri Kur: Çevre +20%, Bütçe -15%",
+        "swipe_left": "Çiftlikleri Reddet: Bütçe +10%, Çevre -10%",
+        "extra_effect_right": "Şehir, dikey bahçelerle yeşil bir metropole dönüşür; 2 gün için çevreye %20 bonus verir.",
+        "extra_effect_left": "Fonlar korunur ancak çevre zarar görür; 1 gün için bütçeye %10 bonus uygulanır."
+      },
+      "es": {
+        "title": "Rascacielos de Agricultura Vertical",
+        "description": "Construye granjas en rascacielos para ahorrar tierra, pero los costos de construcción son altísimos. ¿Apruebas?",
+        "swipe_right": "Construir Granjas: Medio ambiente +20%, Presupuesto -15%",
+        "swipe_left": "Rechazar Granjas: Presupuesto +10%, Medio ambiente -10%",
+        "extra_effect_right": "La ciudad se transforma en una metrópolis verde, otorgando un bono del 20% en medio ambiente por 2 días.",
+        "extra_effect_left": "Se ahorran fondos, pero el medio ambiente sufre; se otorga un bono del 10% en presupuesto por 1 día."
+      },
+      "fr": {
+        "title": "Gratte-ciel d'Agriculture Verticale",
+        "description": "Construisez des fermes dans des gratte-ciel pour économiser de la terre, mais les coûts de construction sont exorbitants. Approuvez-vous ?",
+        "swipe_right": "Construire des Fermes: Environnement +20%, Budget -15%",
+        "swipe_left": "Rejeter les Fermes: Budget +10%, Environnement -10%",
+        "extra_effect_right": "La ville se transforme en métropole verte, accordant un bonus de 20 % sur l'environnement pendant 2 jours.",
+        "extra_effect_left": "Les fonds sont économisés, mais l'environnement en souffre; un bonus de 10 % est accordé sur le budget pour 1 jour."
+      },
+      "de": {
+        "title": "Vertikale Landwirtschafts-Wolkenkratzer",
+        "description": "Errichten Sie Farmen in Wolkenkratzern, um Land zu sparen, aber die Baukosten sind extrem hoch. Zustimmen?",
+        "swipe_right": "Farmen Bauen: Umwelt +20%, Haushalt -15%",
+        "swipe_left": "Farmen Ablehnen: Haushalt +10%, Umwelt -10%",
+        "extra_effect_right": "Die Stadt verwandelt sich in eine grüne Metropole, mit einem Bonus von 20% auf Umwelt für 2 Tage.",
+        "extra_effect_left": "Mittel werden gespart, jedoch leidet die Umwelt; ein Bonus von 10% auf den Haushalt gilt für 1 Tag."
+      },
+      "it": {
+        "title": "Grattacieli di Agricoltura Verticale",
+        "description": "Costruisci fattorie nei grattacieli per risparmiare terreno, ma i costi di costruzione sono alle stelle. Approvi?",
+        "swipe_right": "Costruisci Fattorie: Ambiente +20%, Budget -15%",
+        "swipe_left": "Rifiuta Fattorie: Budget +10%, Ambiente -10%",
+        "extra_effect_right": "La città si trasforma in una metropoli verde, con un bonus del 20% sull'ambiente per 2 giorni.",
+        "extra_effect_left": "Si risparmiano fondi, ma l'ambiente ne risente; viene applicato un bonus del 10% sul budget per 1 giorno."
+      },
+      "pt": {
+        "title": "Arranha-céus de Agricultura Vertical",
+        "description": "Construa fazendas em arranha-céus para economizar terra, mas os custos de construção são altíssimos. Aprova?",
+        "swipe_right": "Construir Fazendas: Ambiente +20%, Orçamento -15%",
+        "swipe_left": "Rejeitar Fazendas: Orçamento +10%, Ambiente -10%",
+        "extra_effect_right": "A cidade se transforma em uma metrópole verde, com um bônus de 20% no ambiente por 2 dias.",
+        "extra_effect_left": "Os fundos são poupados, mas o ambiente sofre; um bônus de 10% no orçamento é aplicado por 1 dia."
+      },
+      "ja": {
+        "title": "垂直農法高層ビル",
+        "description": "高層ビル内に農場を作って土地を節約しますが、建設費は天文学的です。承認しますか？",
+        "swipe_right": "農場を建設: 環境 +20%、予算 -15%",
+        "swipe_left": "農場を拒否: 予算 +10%、環境 -10%",
+        "extra_effect_right": "街は緑豊かな大都市に変貌し、2日間環境に20%のボーナスを与えます。",
+        "extra_effect_left": "資金は節約されますが、環境は低下し、1日間予算に10%のボーナスが適用されます。"
+      },
+      "zh": {
+        "title": "垂直农业摩天大楼",
+        "description": "在摩天大楼中建造农场以节约土地，但建设成本高昂。你批准吗？",
+        "swipe_right": "建造农场：环境 +20%，预算 -15%",
+        "swipe_left": "拒绝农场：预算 +10%，环境 -10%",
+        "extra_effect_right": "城市转变为绿色大都会，接下来2天环境获得20%的加成。",
+        "extra_effect_left": "资金节省，但环境受损；接下来1天预算获得10%的加成。"
+      },
+      "ru": {
+        "title": "Небоскрёбы вертикального сельского хозяйства",
+        "description": "Строительство ферм в небоскрёбах экономит землю, но затраты на строительство заоблачны. Одобряете?",
+        "swipe_right": "Строить фермы: Окружающая среда +20%, Бюджет -15%",
+        "swipe_left": "Отклонить фермы: Бюджет +10%, Окружающая среда -10%",
+        "extra_effect_right": "Город превращается в зелёную метрополию, даруя бонус 20% на окружающую среду на 2 дня.",
+        "extra_effect_left": "Средства экономятся, но окружающая среда страдает; бонус 10% на бюджет применяется на 1 день."
+      },
+      "hi": {
+        "title": "ऊर्ध्वाधर कृषि स्काईस्क्रेपर",
+        "description": "जमीन बचाने के लिए स्काईस्क्रेपर में फार्म बनाएं, लेकिन निर्माण लागत आसमान छू रही है। क्या आप मंजूरी देंगे?",
+        "swipe_right": "फार्म बनाएं: पर्यावरण +20%, बजट -15%",
+        "swipe_left": "फार्म अस्वीकार करें: बजट +10%, पर्यावरण -10%",
+        "extra_effect_right": "शहर हरा-भरा हो जाता है, और अगले 2 दिनों के लिए पर्यावरण पर 20% बोनस मिलता है।",
+        "extra_effect_left": "फंड बचते हैं, लेकिन पर्यावरण को नुकसान होता है; अगले 1 दिन के लिए बजट पर 10% बोनस लगता है।"
+      }
+    },
+    {
+      "id": "aiFashionPolice",
+      "swipe_right_stats": { "happiness": -15, "budget": 10, "environment": 0 },
+      "swipe_left_stats": { "happiness": 10, "budget": -5, "environment": 0 },
+      "extra_effect_right_stats": { "bonus_type": "budget", "bonus": 10 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": 25 },
+      "en": {
+        "title": "AI Fashion Police",
+        "description": "An AI proposes enforcing a futuristic dress code. Progress or privacy invasion?",
+        "swipe_right": "Enforce Code: Budget +10%, Happiness -15%",
+        "swipe_left": "Reject Code: Happiness +10%, Budget -5%",
+        "extra_effect_right": "Fines boost the budget by 10% for the next day.",
+        "extra_effect_left": "A style rebellion increases happiness by 25% for 2 days."
+      },
+      "tr": {
+        "title": "Yapay Zeka Moda Polisi",
+        "description": "Bir yapay zeka, geleceğe yönelik giyim kurallarını uygulamayı öneriyor. İlerleme mi, yoksa gizlilik ihlali mi?",
+        "swipe_right": "Kuralı Uygula: Bütçe +10%, Mutluluk -15%",
+        "swipe_left": "Kuralı Reddet: Mutluluk +10%, Bütçe -5%",
+        "extra_effect_right": "Cezalar, bir sonraki gün bütçeyi %10 artırır.",
+        "extra_effect_left": "Stildeki isyan, 2 gün boyunca mutluluğu %25 artırır."
+      },
+      "es": {
+        "title": "Policía de Moda con IA",
+        "description": "Una IA propone imponer un código de vestimenta futurista. ¿Progreso o invasión a la privacidad?",
+        "swipe_right": "Imponer Código: Presupuesto +10%, Felicidad -15%",
+        "swipe_left": "Rechazar Código: Felicidad +10%, Presupuesto -5%",
+        "extra_effect_right": "Las multas aumentan el presupuesto en un 10% para el día siguiente.",
+        "extra_effect_left": "Una rebelión en el estilo aumenta la felicidad en un 25% durante 2 días."
+      },
+      "fr": {
+        "title": "Police de Mode IA",
+        "description": "Une IA propose d'appliquer un code vestimentaire futuriste. Progrès ou atteinte à la vie privée ?",
+        "swipe_right": "Appliquer le Code: Budget +10%, Bonheur -15%",
+        "swipe_left": "Refuser le Code: Bonheur +10%, Budget -5%",
+        "extra_effect_right": "Les amendes augmentent le budget de 10 % pour le lendemain.",
+        "extra_effect_left": "Une rébellion stylistique augmente le bonheur de 25 % pendant 2 jours."
+      },
+      "de": {
+        "title": "KI-Modepolizei",
+        "description": "Eine KI schlägt vor, einen futuristischen Dresscode durchzusetzen. Fortschritt oder Eingriff in die Privatsphäre?",
+        "swipe_right": "Code Durchsetzen: Haushalt +10%, Glück -15%",
+        "swipe_left": "Code Ablehnen: Glück +10%, Haushalt -5%",
+        "extra_effect_right": "Bußgelder erhöhen den Haushalt um 10 % für den nächsten Tag.",
+        "extra_effect_left": "Ein Stilaufstand steigert das Glück um 25 % für 2 Tage."
+      },
+      "it": {
+        "title": "Polizia della Moda AI",
+        "description": "Un'IA propone di imporre un codice di abbigliamento futuristico. Progresso o violazione della privacy?",
+        "swipe_right": "Applica il Codice: Budget +10%, Felicità -15%",
+        "swipe_left": "Rifiuta il Codice: Felicità +10%, Budget -5%",
+        "extra_effect_right": "Le multe incrementano il budget del 10% per il giorno successivo.",
+        "extra_effect_left": "Una ribellione nello stile aumenta la felicità del 25% per 2 giorni."
+      },
+      "pt": {
+        "title": "Polícia de Moda com IA",
+        "description": "Uma IA propõe impor um código de vestimenta futurista. Progresso ou invasão de privacidade?",
+        "swipe_right": "Aplicar o Código: Orçamento +10%, Felicidade -15%",
+        "swipe_left": "Recusar o Código: Felicidade +10%, Orçamento -5%",
+        "extra_effect_right": "Multas aumentam o orçamento em 10% para o dia seguinte.",
+        "extra_effect_left": "Uma rebelião de estilo aumenta a felicidade em 25% por 2 dias."
+      },
+      "ja": {
+        "title": "AIファッションポリス",
+        "description": "AIが未来的なドレスコードの施行を提案しています。進歩かプライバシー侵害か？",
+        "swipe_right": "コードを施行：予算 +10%、幸福 -15%",
+        "swipe_left": "コードを拒否：幸福 +10%、予算 -5%",
+        "extra_effect_right": "罰金により翌日、予算が10%増加します。",
+        "extra_effect_left": "スタイルの反乱が2日間、幸福を25%増加させます。"
+      },
+      "zh": {
+        "title": "AI时尚警察",
+        "description": "一款AI提议执行未来派着装规定。这是进步还是侵犯隐私？",
+        "swipe_right": "执行规定：预算 +10%，幸福 -15%",
+        "swipe_left": "拒绝规定：幸福 +10%，预算 -5%",
+        "extra_effect_right": "罚款使得次日预算增加10%。",
+        "extra_effect_left": "风格反抗使得次日幸福增加25%，持续2天。"
+      },
+      "ru": {
+        "title": "Полицейские по моде на ИИ",
+        "description": "ИИ предлагает ввести футуристический дресс-код. Прогресс или нарушение личной жизни?",
+        "swipe_right": "Ввести кодекс: Бюджет +10%, Счастье -15%",
+        "swipe_left": "Отклонить кодекс: Счастье +10%, Бюджет -5%",
+        "extra_effect_right": "Штрафы увеличивают бюджет на 10% на следующий день.",
+        "extra_effect_left": "Модное восстание увеличивает счастье на 25% на 2 дня."
+      },
+      "hi": {
+        "title": "एआई फैशन पुलिस",
+        "description": "एक एआई भविष्यवादी ड्रेस कोड लागू करने का प्रस्ताव देता है। क्या यह प्रगति है या गोपनीयता का उल्लंघन?",
+        "swipe_right": "कोड लागू करें: बजट +10%, खुशी -15%",
+        "swipe_left": "कोड अस्वीकार करें: खुशी +10%, बजट -5%",
+        "extra_effect_right": "जुर्माने अगले दिन बजट को 10% बढ़ाते हैं।",
+        "extra_effect_left": "स्टाइल में विद्रोह से 2 दिनों के लिए खुशी में 25% वृद्धि होती है।"
+      }
+    },
+    {
+      "id": "moonTourismTax",
+      "swipe_right_stats": { "happiness": -10, "budget": 20, "environment": 0 },
+      "swipe_left_stats": { "happiness": 15, "budget": -20, "environment": 0 },
+      "extra_effect_right_stats": { "bonus_type": "budget", "bonus": 10 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": 30 },
+      "en": {
+        "title": "Moon Tourism Tax",
+        "description": "Tax lunar vacations to fund Earth projects, or subsidize space travel for all?",
+        "swipe_right": "Tax Vacations: Budget +20%, Happiness -10%",
+        "swipe_left": "Subsidize Travel: Happiness +15%, Budget -20%",
+        "extra_effect_right": "Tax revenue increases the budget by 10% for 1 day.",
+        "extra_effect_left": "Subsidies boost happiness by 30% for 2 days."
+      },
+      "tr": {
+        "title": "Ay Turizmi Vergisi",
+        "description": "Dünya projeleri için fon sağlamak amacıyla ay tatillerini vergilendirin ya da herkese uzay yolculuğunu sübvansiyonu verin?",
+        "swipe_right": "Vergi Uygula: Bütçe +20%, Mutluluk -10%",
+        "swipe_left": "Sübvansiyon Ver: Mutluluk +15%, Bütçe -20%",
+        "extra_effect_right": "Vergi gelirleri, bir gün için bütçeyi %10 artırır.",
+        "extra_effect_left": "Sübvansiyon, 2 gün boyunca mutluluğu %30 artırır."
+      },
+      "es": {
+        "title": "Impuesto al Turismo Lunar",
+        "description": "¿Gravar las vacaciones lunares para financiar proyectos terrestres o subsidiar los viajes espaciales para todos?",
+        "swipe_right": "Gravar Vacaciones: Presupuesto +20%, Felicidad -10%",
+        "swipe_left": "Subvencionar Viajes: Felicidad +15%, Presupuesto -20%",
+        "extra_effect_right": "El impuesto aumenta el presupuesto en un 10% por 1 día.",
+        "extra_effect_left": "Subvencionar los viajes incrementa la felicidad en un 30% por 2 días."
+      },
+      "fr": {
+        "title": "Taxe sur le Tourisme Lunaire",
+        "description": "Taxer les vacances lunaires pour financer des projets terrestres ou subventionner les voyages spatiaux pour tous ?",
+        "swipe_right": "Taxer les Vacances : Budget +20%, Bonheur -10%",
+        "swipe_left": "Subventionner les Voyages : Bonheur +15%, Budget -20%",
+        "extra_effect_right": "La taxe augmente le budget de 10 % pour 1 jour.",
+        "extra_effect_left": "La subvention augmente le bonheur de 30 % pendant 2 jours."
+      },
+      "de": {
+        "title": "Mondtourismussteuer",
+        "description": "Besteuere Mondurlaube zur Finanzierung von Erdprojekten oder subventioniere Raumfahrt für alle?",
+        "swipe_right": "Urlaube besteuern: Haushalt +20%, Glück -10%",
+        "swipe_left": "Reisen subventionieren: Glück +15%, Haushalt -20%",
+        "extra_effect_right": "Die Steuer steigert den Haushalt um 10 % für 1 Tag.",
+        "extra_effect_left": "Subventionen erhöhen das Glück um 30 % für 2 Tage."
+      },
+      "it": {
+        "title": "Tassa sul Turismo Lunare",
+        "description": "Tassare le vacanze lunari per finanziare progetti terrestri o sovvenzionare i viaggi spaziali per tutti?",
+        "swipe_right": "Tassare le Vacanze: Budget +20%, Felicità -10%",
+        "swipe_left": "Sovvenzionare i Viaggi: Felicità +15%, Budget -20%",
+        "extra_effect_right": "La tassa aumenta il budget del 10% per 1 giorno.",
+        "extra_effect_left": "I sussidi aumentano la felicità del 30% per 2 giorni."
+      },
+      "pt": {
+        "title": "Imposto ao Turismo Lunar",
+        "description": "Tributar as férias lunares para financiar projetos terrestres ou subsidiar as viagens espaciais para todos?",
+        "swipe_right": "Tributar Férias: Orçamento +20%, Felicidade -10%",
+        "swipe_left": "Subsidiar Viagens: Felicidade +15%, Orçamento -20%",
+        "extra_effect_right": "O imposto aumenta o orçamento em 10% por 1 dia.",
+        "extra_effect_left": "Subsídios aumentam a felicidade em 30% por 2 dias."
+      },
+      "ja": {
+        "title": "月面観光税",
+        "description": "地球プロジェクトの資金調達のために月面休暇に税金を課すか、全員の宇宙旅行を補助するか？",
+        "swipe_right": "休暇に税金を: 予算 +20%、幸福 -10%",
+        "swipe_left": "旅行を補助: 幸福 +15%、予算 -20%",
+        "extra_effect_right": "税収が翌日、予算を10%増加させます。",
+        "extra_effect_left": "補助金が2日間、幸福を30%向上させます。"
+      },
+      "zh": {
+        "title": "月球旅游税",
+        "description": "对月球度假征税以资助地球项目，还是补贴所有人的太空旅行？",
+        "swipe_right": "征税：预算 +20%，幸福 -10%",
+        "swipe_left": "补贴旅行：幸福 +15%，预算 -20%",
+        "extra_effect_right": "征税使预算次日增加10%。",
+        "extra_effect_left": "补贴使幸福在2天内提升30%。"
+      },
+      "ru": {
+        "title": "Налог на лунный туризм",
+        "description": "Облагайте налогом лунные отпуска для финансирования земных проектов или субсидируйте космические путешествия для всех?",
+        "swipe_right": "Облагать налогом: Бюджет +20%, Счастье -10%",
+        "swipe_left": "Субсидировать: Счастье +15%, Бюджет -20%",
+        "extra_effect_right": "Налог увеличивает бюджет на 10% на следующий день.",
+        "extra_effect_left": "Субсидии увеличивают счастье на 30% на 2 дня."
+      },
+      "hi": {
+        "title": "चंद्र पर्यटन कर",
+        "description": "पृथ्वी परियोजनाओं के लिए फंड जुटाने हेतु चंद्र अवकाश पर कर लगाएं या अंतरिक्ष यात्रा को सब्सिडी दें?",
+        "swipe_right": "कर लगाएं: बजट +20%, खुशी -10%",
+        "swipe_left": "सब्सिडी दें: खुशी +15%, बजट -20%",
+        "extra_effect_right": "कर से अगले दिन बजट में 10% की वृद्धि होती है।",
+        "extra_effect_left": "सब्सिडी से 2 दिनों के लिए खुशी में 30% की वृद्धि होती है।"
+      }
+    },
+    {
+      "id": "freezeRaysForTrafficControl",
+      "swipe_right_stats": { "happiness": 10, "budget": 0, "environment": -10 },
+      "swipe_left_stats": { "happiness": -5, "budget": 5, "environment": 0 },
+      "extra_effect_right_stats": { "bonus_type": "environment", "bonus": 20 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": -15 },
+      "en": {
+        "title": "Freeze Rays for Traffic Control",
+        "description": "Deploy freeze rays to halt reckless driving, but risk unintended freezes. Your choice?",
+        "swipe_right": "Use Freeze Rays: Happiness +10%, Environment -10%",
+        "swipe_left": "Issue Tickets: Budget +5%, Happiness -5%",
+        "extra_effect_right": "Freeze rays ease traffic and grant a 20% bonus on environment for 1 day.",
+        "extra_effect_left": "Traditional fines impose a 15% penalty on happiness for 1 day."
+      },
+      "tr": {
+        "title": "Trafik Kontrolü için Donma Işınları",
+        "description": "Dikkatsiz sürüşü durdurmak için donma ışınlarını kullanın, ancak planlanandan fazla dondurma riski var. Ne yapacaksınız?",
+        "swipe_right": "Donma Işınlarını Kullan: Mutluluk +10%, Çevre -10%",
+        "swipe_left": "Ceza Kes: Bütçe +5%, Mutluluk -5%",
+        "extra_effect_right": "Donma ışınları trafiği hafifletir ve 1 gün için çevreye %20 bonus verir.",
+        "extra_effect_left": "Geleneksel cezalar, 1 gün için mutluluktan %15 ceza uygular."
+      },
+      "es": {
+        "title": "Rayos de Congelación para Control de Tráfico",
+        "description": "Despliega rayos de congelación para detener la conducción imprudente, pero corres el riesgo de congelar de más. ¿Qué decides?",
+        "swipe_right": "Usar Rayos: Felicidad +10%, Medio ambiente -10%",
+        "swipe_left": "Multar: Presupuesto +5%, Felicidad -5%",
+        "extra_effect_right": "Los rayos alivian el tráfico y otorgan un bono del 20% en medio ambiente por 1 día.",
+        "extra_effect_left": "Las multas tradicionales imponen una penalización del 15% en la felicidad por 1 día."
+      },
+      "fr": {
+        "title": "Rayons de Congélation pour le Contrôle du Trafic",
+        "description": "Déployez des rayons de congélation pour stopper une conduite imprudente, mais risquez de geler plus que prévu. Quelle est votre décision ?",
+        "swipe_right": "Utiliser les Rayons: Bonheur +10%, Environnement -10%",
+        "swipe_left": "Émettre des Amendes: Budget +5%, Bonheur -5%",
+        "extra_effect_right": "Les rayons améliorent la circulation et accordent un bonus de 20 % sur l'environnement pour 1 jour.",
+        "extra_effect_left": "Les amendes traditionnelles imposent une pénalité de 15 % sur le bonheur pour 1 jour."
+      },
+      "de": {
+        "title": "Frierstrahlen zur Verkehrssteuerung",
+        "description": "Setzen Sie Frierstrahlen ein, um rücksichtsloses Fahren zu stoppen, aber riskieren Sie, mehr einzufrieren als geplant. Was entscheiden Sie?",
+        "swipe_right": "Frierstrahlen Nutzen: Glück +10%, Umwelt -10%",
+        "swipe_left": "Bußgelder Verhängen: Haushalt +5%, Glück -5%",
+        "extra_effect_right": "Frierstrahlen erleichtern den Verkehr und gewähren einen Bonus von 20% auf Umwelt für 1 Tag.",
+        "extra_effect_left": "Traditionelle Bußgelder führen zu einem Malus von 15% auf Glück für 1 Tag."
+      },
+      "it": {
+        "title": "Raggi Congelanti per il Controllo del Traffico",
+        "description": "Utilizza raggi congelanti per fermare la guida spericolata, ma rischia di congelare più del previsto. Cosa scegli?",
+        "swipe_right": "Usa Raggi: Felicità +10%, Ambiente -10%",
+        "swipe_left": "Multa: Budget +5%, Felicità -5%",
+        "extra_effect_right": "I raggi alleviano il traffico, concedendo un bonus del 20% sull'ambiente per 1 giorno.",
+        "extra_effect_left": "Le multe tradizionali impongono una penalità del 15% sulla felicità per 1 giorno."
+      },
+      "pt": {
+        "title": "Raios de Congelamento para Controle de Tráfego",
+        "description": "Utilize raios de congelamento para parar a condução imprudente, mas corra o risco de congelar mais do que o previsto. Qual sua escolha?",
+        "swipe_right": "Usar Raios: Felicidade +10%, Ambiente -10%",
+        "swipe_left": "Aplicar Multas: Orçamento +5%, Felicidade -5%",
+        "extra_effect_right": "Os raios aliviam o tráfego e concedem um bônus de 20% no ambiente por 1 dia.",
+        "extra_effect_left": "Multas tradicionais impõem uma penalidade de 15% na felicidade por 1 dia."
+      },
+      "ja": {
+        "title": "交通制御のための凍結光線",
+        "description": "無謀な運転を止めるために凍結光線を使用しますが、予定以上に凍らせるリスクがあります。あなたの選択は？",
+        "swipe_right": "凍結光線を使用: 幸福 +10%、環境 -10%",
+        "swipe_left": "罰金を課す: 予算 +5%、幸福 -5%",
+        "extra_effect_right": "凍結光線が交通を改善し、1日間環境に20%のボーナスを与えます。",
+        "extra_effect_left": "伝統的な罰金は、1日間幸福に15%のペナルティを課します。"
+      },
+      "zh": {
+        "title": "用于交通管制的冷冻射线",
+        "description": "部署冷冻射线以阻止鲁莽驾驶，但可能会冻住超出预期的范围。你的选择是什么？",
+        "swipe_right": "使用冷冻射线：幸福 +10%，环境 -10%",
+        "swipe_left": "开罚单：预算 +5%，幸福 -5%",
+        "extra_effect_right": "冷冻射线缓解了交通，1天内环境获得20%的加成。",
+        "extra_effect_left": "传统罚单使幸福下降15%于1天内。"
+      },
+      "ru": {
+        "title": "Замораживающие Лучи для Контроля Движения",
+        "description": "Используйте замораживающие лучи, чтобы остановить безрассудное вождение, но рискуете заморозить больше, чем планировалось. Как поступите?",
+        "swipe_right": "Использовать Лучи: Счастье +10%, Окружающая среда -10%",
+        "swipe_left": "Ввести штрафы: Бюджет +5%, Счастье -5%",
+        "extra_effect_right": "Замораживающие лучи облегчают движение, давая бонус 20% на экологические показатели на 1 день.",
+        "extra_effect_left": "Традиционные штрафы налагают штраф 15% на счастье на 1 день."
+      },
+      "hi": {
+        "title": "यातायात नियंत्रण के लिए फ्रिज रे",
+        "description": "बेपरवाह ड्राइविंग को रोकने के लिए फ्रिज रे का उपयोग करें, लेकिन अपेक्षा से अधिक ठंडा करने का जोखिम है। आपका निर्णय क्या है?",
+        "swipe_right": "फ्रिज रे का उपयोग करें: खुशी +10%, पर्यावरण -10%",
+        "swipe_left": "टिकट जारी करें: बजट +5%, खुशी -5%",
+        "extra_effect_right": "फ्रिज रे से यातायात सुधरता है, और 1 दिन के लिए पर्यावरण पर 20% बोनस मिलता है।",
+        "extra_effect_left": "पारंपरिक जुर्माने से 1 दिन के लिए खुशी पर 15% दंड लगता है।"
+      }
+    },
+    {
+      "id": "threeDPrintedFoodOnly",
+      "swipe_right_stats": { "happiness": -20, "budget": 0, "environment": 15 },
+      "swipe_left_stats": { "happiness": 15, "budget": 0, "environment": -10 },
+      "extra_effect_right_stats": { "bonus_type": "environment", "bonus": 10 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": 25 },
+      "en": {
+        "title": "3D-Printed Food Only",
+        "description": "Ban traditional cooking in favor of 3D-printed meals. Chefs revolt while eco-activists cheer. Decide!",
+        "swipe_right": "Enforce Printed Food: Environment +15%, Happiness -20%",
+        "swipe_left": "Allow Real Food: Happiness +15%, Environment -10%",
+        "extra_effect_right": "Citizens endure bland meals as eco-savings yield a 10% bonus on environment for 2 days.",
+        "extra_effect_left": "Gourmet delights spark a culinary renaissance, granting a 25% bonus on happiness for 2 days."
+      },
+      "tr": {
+        "title": "Sadece 3D Baskılı Yiyecek",
+        "description": "Geleneksel yemek pişirmeyi yasaklayıp 3D baskılı yemekleri uygulayın. Şefler isyan ederken çevreci aktivistler alkışlıyor. Karar verin!",
+        "swipe_right": "3D Yemek Zorunlu: Çevre +15%, Mutluluk -20%",
+        "swipe_left": "Gerçek Yiyeceklere İzin Ver: Mutluluk +15%, Çevre -10%",
+        "extra_effect_right": "Vatandaşlar tatsız yemeklere katlanır, 2 gün için çevrede %10 bonus sağlar.",
+        "extra_effect_left": "Gurme lezzetler mutfakta devrim yaratır, 2 gün için mutlulukta %25 bonus sağlar."
+      },
+      "es": {
+        "title": "Solo Comida Impresa en 3D",
+        "description": "Prohíbe la cocina tradicional a favor de comidas impresas en 3D. Los chefs se rebelan mientras los ecologistas aplauden. ¡Decide!",
+        "swipe_right": "Imponer Comida Impresa: Medio ambiente +15%, Felicidad -20%",
+        "swipe_left": "Permitir Comida Real: Felicidad +15%, Medio ambiente -10%",
+        "extra_effect_right": "Los ciudadanos soportan comidas insípidas, con un bono del 10% en medio ambiente por 2 días.",
+        "extra_effect_left": "Delicias gourmet desencadenan una revolución culinaria, otorgando un bono del 25% en felicidad por 2 días."
+      },
+      "fr": {
+        "title": "Nourriture 3D-Printée Uniquement",
+        "description": "Interdire la cuisine traditionnelle au profit de repas imprimés en 3D. Les chefs se révoltent tandis que les éco-activistes applaudissent. À vous de décider !",
+        "swipe_right": "Imposer la Nourriture Imprimée: Environnement +15%, Bonheur -20%",
+        "swipe_left": "Autoriser la Nourriture Réelle: Bonheur +15%, Environnement -10%",
+        "extra_effect_right": "Les citoyens supportent des repas fades, avec un bonus de 10 % sur l'environnement pendant 2 jours.",
+        "extra_effect_left": "Des délices culinaires provoquent une renaissance, accordant un bonus de 25 % sur le bonheur pendant 2 jours."
+      },
+      "de": {
+        "title": "Nur 3D-gedrucktes Essen",
+        "description": "Verbieten Sie traditionelles Kochen zugunsten von 3D-gedruckten Mahlzeiten. Köche rebellieren, während Umweltaktivisten jubeln. Entscheiden Sie!",
+        "swipe_right": "3D-Essen Erzwingen: Umwelt +15%, Glück -20%",
+        "swipe_left": "Echtes Essen Zulassen: Glück +15%, Umwelt -10%",
+        "extra_effect_right": "Die Bürger ertragen fade Mahlzeiten, und ökologische Einsparungen gewähren einen 10% Bonus auf Umwelt für 2 Tage.",
+        "extra_effect_left": "Gourmetgenüsse lösen eine kulinarische Renaissance aus, die 2 Tage lang einen 25% Bonus auf Glück gewährt."
+      },
+      "it": {
+        "title": "Solo Cibo Stampato in 3D",
+        "description": "Vietare la cucina tradizionale a favore dei pasti stampati in 3D. I cuochi si ribellano mentre gli eco-attivisti applaudono. Decidi!",
+        "swipe_right": "Imporre il Cibo Stampato: Ambiente +15%, Felicità -20%",
+        "swipe_left": "Consentire il Cibo Reale: Felicità +15%, Ambiente -10%",
+        "extra_effect_right": "I cittadini sopportano pasti insipidi, ottenendo un bonus del 10% sull'ambiente per 2 giorni.",
+        "extra_effect_left": "Le prelibatezze gourmet scatenano una rinascita culinaria, concedendo un bonus del 25% sulla felicità per 2 giorni."
+      },
+      "pt": {
+        "title": "Apenas Comida Impressa em 3D",
+        "description": "Proíba a culinária tradicional em favor das refeições impressas em 3D. Os chefs se rebelam enquanto os ativistas ecológicos aplaudem. Decida!",
+        "swipe_right": "Impor Comida Impressa: Ambiente +15%, Felicidade -20%",
+        "swipe_left": "Permitir Comida Real: Felicidade +15%, Ambiente -10%",
+        "extra_effect_right": "Os cidadãos suportam refeições sem sabor, com um bônus de 10% no ambiente por 2 dias.",
+        "extra_effect_left": "Delícias gourmet desencadeiam um renascimento culinário, concedendo um bônus de 25% na felicidade por 2 dias."
+      },
+      "ja": {
+        "title": "3Dプリント食品のみ",
+        "description": "従来の料理を禁止し、3Dプリントされた食事のみを採用します。シェフは反乱し、環境活動家は歓声を上げます。決定してください！",
+        "swipe_right": "3D食品を強制: 環境 +15%、幸福 -20%",
+        "swipe_left": "本物の食事を許可: 幸福 +15%、環境 -10%",
+        "extra_effect_right": "市民は味気ない食事に耐え、2日間環境に10%のボーナスが付く。",
+        "extra_effect_left": "グルメ料理が料理革命を引き起こし、2日間幸福に25%のボーナスを与える。"
+      },
+      "zh": {
+        "title": "仅限3D打印食品",
+        "description": "禁止传统烹饪，采用3D打印食品。厨师起义，而环保活动家欢呼。请决定！",
+        "swipe_right": "强制使用3D食品：环境 +15%，幸福 -20%",
+        "swipe_left": "允许真实食品：幸福 +15%，环境 -10%",
+        "extra_effect_right": "市民忍受平淡食品，2天内环境获得10%的加成。",
+        "extra_effect_left": "美食激发烹饪革命，2天内幸福获得25%的加成。"
+      },
+      "ru": {
+        "title": "Только 3D-печатная еда",
+        "description": "Запретите традиционную кухню в пользу 3D-печатной еды. Шеф-повара восстают, а эко-активисты радуются. Решайте!",
+        "swipe_right": "Ввести 3D-печать еды: Окружающая среда +15%, Счастье -20%",
+        "swipe_left": "Разрешить настоящую еду: Счастье +15%, Окружающая среда -10%",
+        "extra_effect_right": "Граждане мирятся с пресной едой, получая 10% бонус на окружающую среду на 2 дня.",
+        "extra_effect_left": "Настоящие блюда вызывают кулинарное возрождение, обеспечивая 25% бонус на счастье на 2 дня."
+      },
+      "hi": {
+        "title": "केवल 3D-प्रिंटेड भोजन",
+        "description": "पारंपरिक खाना पकाने पर प्रतिबंध लगाकर 3D-प्रिंटेड भोजन अपनाएं। रसोइये विद्रोह करते हैं जबकि पर्यावरण प्रेमी खुशियाँ मनाते हैं। निर्णय करें!",
+        "swipe_right": "3D भोजन लागू करें: पर्यावरण +15%, खुशी -20%",
+        "swipe_left": "वास्तविक भोजन की अनुमति दें: खुशी +15%, पर्यावरण -10%",
+        "extra_effect_right": "नागरिक फीके भोजन सहते हैं, 2 दिनों के लिए पर्यावरण पर 10% बोनस मिलता है।",
+        "extra_effect_left": "गौरमेट व्यंजन पाक कला में पुनर्जागरण लाते हैं, 2 दिनों के लिए खुशी पर 25% बोनस देते हैं।"
+      }
+    },
+    {
+      "id": "hologramWildlifeParks",
+      "swipe_right_stats": { "happiness": -10, "budget": 10, "environment": 0 },
+      "swipe_left_stats": { "happiness": 10, "budget": 0, "environment": -5 },
+      "extra_effect_right_stats": { "bonus_type": "budget", "bonus": 15 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": 10 },
+      "en": {
+        "title": "Hologram Wildlife Parks",
+        "description": "Replace traditional zoos with holographic animal exhibits. Cheaper, but is it humane?",
+        "swipe_right": "Adopt Holograms: Budget +10%, Happiness -10%",
+        "swipe_left": "Keep Real Animals: Happiness +10%, Environment -5%",
+        "extra_effect_right": "Holograms lower maintenance costs, granting a 15% bonus on budget for 1 day.",
+        "extra_effect_left": "Real animals inspire awe and joy, granting a 10% bonus on happiness for 1 day."
+      },
+      "tr": {
+        "title": "Holografik Yaban Hayatı Parkları",
+        "description": "Geleneksel hayvanat bahçelerini holografik hayvan sergileriyle değiştirin. Daha ucuz, ancak insani mi?",
+        "swipe_right": "Hologramları Benimse: Bütçe +10%, Mutluluk -10%",
+        "swipe_left": "Gerçek Hayvanları Sakla: Mutluluk +10%, Çevre -5%",
+        "extra_effect_right": "Hologramlar bakım maliyetlerini düşürür, 1 gün için bütçeye %15 bonus sağlar.",
+        "extra_effect_left": "Gerçek hayvanlar hayranlık uyandırır ve neşe getirir, 1 gün için mutlulukta %10 bonus sağlar."
+      },
+      "es": {
+        "title": "Parques de Fauna Holográficos",
+        "description": "Reemplaza los zoológicos tradicionales por exhibiciones holográficas de animales. Más barato, pero ¿es humano?",
+        "swipe_right": "Adoptar Hologramas: Presupuesto +10%, Felicidad -10%",
+        "swipe_left": "Conservar Animales Reales: Felicidad +10%, Medio ambiente -5%",
+        "extra_effect_right": "Los hologramas reducen los costos de mantenimiento, otorgando un bono del 15% en presupuesto por 1 día.",
+        "extra_effect_left": "Los animales reales inspiran asombro y alegría, otorgando un bono del 10% en felicidad por 1 día."
+      },
+      "fr": {
+        "title": "Parcs Fauniques Holographiques",
+        "description": "Remplacez les zoos traditionnels par des expositions holographiques d'animaux. Moins cher, mais est-ce humain ?",
+        "swipe_right": "Adopter les Hologrammes: Budget +10%, Bonheur -10%",
+        "swipe_left": "Garder les Animaux Réels: Bonheur +10%, Environnement -5%",
+        "extra_effect_right": "Les hologrammes réduisent les coûts de maintenance, accordant un bonus de 15 % sur le budget pour 1 jour.",
+        "extra_effect_left": "Les animaux réels inspirent émerveillement et joie, accordant un bonus de 10 % sur le bonheur pour 1 jour."
+      },
+      "de": {
+        "title": "Holographische Tierparks",
+        "description": "Ersetze traditionelle Zoos durch holographische Tierausstellungen. Günstiger, aber ist es human?",
+        "swipe_right": "Hologramme übernehmen: Haushalt +10%, Glück -10%",
+        "swipe_left": "Echte Tiere Behalten: Glück +10%, Umwelt -5%",
+        "extra_effect_right": "Hologramme senken die Wartungskosten und gewähren einen Bonus von 15% auf den Haushalt für 1 Tag.",
+        "extra_effect_left": "Echte Tiere erhöhen das Glück um 10% für 1 Tag."
+      },
+      "it": {
+        "title": "Parchi Faunistici Olografici",
+        "description": "Sostituisci gli zoo tradizionali con esposizioni olografiche di animali. Più economico, ma è umano?",
+        "swipe_right": "Adotta Ologrammi: Budget +10%, Felicità -10%",
+        "swipe_left": "Mantieni Animali Reali: Felicità +10%, Ambiente -5%",
+        "extra_effect_right": "Gli ologrammi riducono i costi di manutenzione, concedendo un bonus del 15% sul budget per 1 giorno.",
+        "extra_effect_left": "Gli animali reali aumentano la felicità del 10% per 1 giorno."
+      },
+      "pt": {
+        "title": "Parques de Vida Selvagem Holográficos",
+        "description": "Substitua os zoológicos tradicionais por exibições holográficas de animais. Mais barato, mas é humano?",
+        "swipe_right": "Adote Hologramas: Orçamento +10%, Felicidade -10%",
+        "swipe_left": "Mantenha Animais Reais: Felicidade +10%, Ambiente -5%",
+        "extra_effect_right": "Os hologramas reduzem os custos de manutenção, concedendo um bônus de 15% no orçamento por 1 dia.",
+        "extra_effect_left": "Animais reais aumentam a felicidade em 10% por 1 dia."
+      },
+      "ja": {
+        "title": "ホログラム動物園パーク",
+        "description": "伝統的な動物園をホログラムの動物展示に置き換えます。より安価ですが、人道的でしょうか？",
+        "swipe_right": "ホログラム採用: 予算 +10%、幸福 -10%",
+        "swipe_left": "実物の動物維持: 幸福 +10%、環境 -5%",
+        "extra_effect_right": "ホログラムが維持費を下げ、1日間予算に15%のボーナスを与えます。",
+        "extra_effect_left": "実際の動物は幸福を10%向上させます。"
+      },
+      "zh": {
+        "title": "全息野生动物公园",
+        "description": "用全息动物展览取代传统动物园。成本更低，但是否人道？",
+        "swipe_right": "采用全息图：预算 +10%，幸福 -10%",
+        "swipe_left": "保留真实动物：幸福 +10%，环境 -5%",
+        "extra_effect_right": "全息图降低了维护成本，为1天的预算提供15%的加成。",
+        "extra_effect_left": "真实动物使幸福提高10%（持续1天）。"
+      },
+      "ru": {
+        "title": "Голографические зоопарки",
+        "description": "Замените традиционные зоопарки на голографические выставки животных. Дешевле, но гуманно ли это?",
+        "swipe_right": "Принять голограммы: Бюджет +10%, Счастье -10%",
+        "swipe_left": "Сохранить настоящих животных: Счастье +10%, Окружающая среда -5%",
+        "extra_effect_right": "Голограммы снижают затраты, давая бонус 15% на бюджет на 1 день.",
+        "extra_effect_left": "Настоящие животные повышают счастье на 10% на 1 день."
+      },
+      "hi": {
+        "title": "होलोग्राम वन्यजीवन पार्क",
+        "description": "पारंपरिक चिड़ियाघर को होलोग्राम पशु प्रदर्शन से बदलें। लागत कम है, लेकिन क्या यह मानवीय है?",
+        "swipe_right": "होलोग्राम अपनाएं: बजट +10%, खुशी -10%",
+        "swipe_left": "वास्तविक जानवर रखें: खुशी +10%, पर्यावरण -5%",
+        "extra_effect_right": "होलोग्राम रखरखाव लागत कम करते हैं, जिससे 1 दिन के लिए बजट में 15% बोनस मिलता है।",
+        "extra_effect_left": "वास्तविक जानवर से 1 दिन के लिए खुशी में 10% वृद्धि होती है।"
+      }
+    },
+    {
+      "id": "mandatoryNaptimeLaw",
+      "swipe_right_stats": { "happiness": 20, "budget": -15, "environment": 0 },
+      "swipe_left_stats": { "happiness": -10, "budget": 10, "environment": 0 },
+      "extra_effect_right_stats": { "bonus_type": "happiness", "bonus": 30 },
+      "extra_effect_left_stats": { "bonus_type": "happiness", "bonus": -20 },
+      "en": {
+        "title": "Mandatory Naptime Law",
+        "description": "Enforce a midday nap for all citizens. Productivity dips, but spirits soar. Choose wisely!",
+        "swipe_right": "Enforce Naptime: Happiness +20%, Budget -15%",
+        "swipe_left": "Reject Naptime: Budget +10%, Happiness -10%",
+        "extra_effect_right": "Well-rested citizens boost creativity, granting a 30% bonus on happiness for 1 day.",
+        "extra_effect_left": "Lack of rest leads to fatigue and low morale, imposing a 20% penalty on happiness for 1 day."
+      },
+      "tr": {
+        "title": "Zorunlu Öğle Şekerleme Yasası",
+        "description": "Tüm vatandaşlar için öğle şekerlemesini zorunlu kılın. Verimlilik düşer, ancak moral yükselir. Akıllıca seçin!",
+        "swipe_right": "Şekerlemeyi Zorla: Mutluluk +20%, Bütçe -15%",
+        "swipe_left": "Şekerlemeyi Reddet: Bütçe +10%, Mutluluk -10%",
+        "extra_effect_right": "İyi dinlenmiş vatandaşlar yaratıcılığı artırır, 1 gün için mutlulukta %30 bonus sağlar.",
+        "extra_effect_left": "Yetersiz dinlenme yorgunluk ve düşük moral getirir, 1 gün için mutlulukta %20 ceza uygular."
+      },
+      "es": {
+        "title": "Ley de Siesta Obligatoria",
+        "description": "Obliga a todos los ciudadanos a tomar una siesta al mediodía. La productividad baja, pero el ánimo se eleva. ¡Elige sabiamente!",
+        "swipe_right": "Hacer Cumplir la Siesta: Felicidad +20%, Presupuesto -15%",
+        "swipe_left": "Rechazar la Siesta: Presupuesto +10%, Felicidad -10%",
+        "extra_effect_right": "Ciudadanos descansados otorgan un bono del 30% en felicidad por 1 día.",
+        "extra_effect_left": "La falta de descanso impone una penalización del 20% en felicidad por 1 día."
+      },
+      "fr": {
+        "title": "Loi sur la Sieste Obligatoire",
+        "description": "Obligez tous les citoyens à faire une sieste à midi. La productivité diminue, mais l'esprit s'élève. Choisissez judicieusement !",
+        "swipe_right": "Faire Appliquer la Sieste: Bonheur +20%, Budget -15%",
+        "swipe_left": "Refuser la Sieste: Budget +10%, Bonheur -10%",
+        "extra_effect_right": "Les citoyens reposés augmentent le bonheur de 30 % pour 1 jour.",
+        "extra_effect_left": "Le manque de repos entraîne une pénalité de 20 % sur le bonheur pour 1 jour."
+      },
+      "de": {
+        "title": "Pflicht-Nickerchen-Gesetz",
+        "description": "Verpflichten Sie alle Bürger zu einem Mittagsschlaf. Die Produktivität sinkt, aber die Stimmung steigt. Wählen Sie weise!",
+        "swipe_right": "Nickerchen Erzwingen: Glück +20%, Haushalt -15%",
+        "swipe_left": "Nickerchen Ablehnen: Haushalt +10%, Glück -10%",
+        "extra_effect_right": "Gut ausgeruhte Bürger verleihen 1 Tag lang einen 30% Bonus auf Glück.",
+        "extra_effect_left": "Mangel an Ruhe führt zu einem 20% Malus auf Glück für 1 Tag."
+      },
+      "it": {
+        "title": "Legge Obbligatoria della Siesta",
+        "description": "Imponi un pisolino a metà giornata per tutti i cittadini. La produttività cala, ma l'umore sale. Scegli saggiamente!",
+        "swipe_right": "Imponi la Siesta: Felicità +20%, Budget -15%",
+        "swipe_left": "Rifiuta la Siesta: Budget +10%, Felicità -10%",
+        "extra_effect_right": "Cittadini riposati danno un bonus del 30% sulla felicità per 1 giorno.",
+        "extra_effect_left": "La mancanza di riposo comporta un malus del 20% sulla felicità per 1 giorno."
+      },
+      "pt": {
+        "title": "Lei da Sesta Obrigatória",
+        "description": "Imponha uma sesta para todos os cidadãos ao meio-dia. A produtividade cai, mas o ânimo aumenta. Escolha sabiamente!",
+        "swipe_right": "Impor a Sesta: Felicidade +20%, Orçamento -15%",
+        "swipe_left": "Recusar a Sesta: Orçamento +10%, Felicidade -10%",
+        "extra_effect_right": "Cidadãos descansados aumentam a felicidade em 30% por 1 dia.",
+        "extra_effect_left": "A falta de descanso impõe um malus de 20% na felicidade por 1 dia."
+      },
+      "ja": {
+        "title": "義務的な昼寝法",
+        "description": "全市民に昼寝を義務付けます。生産性は下がりますが、士気は上がります。賢明に選んでください！",
+        "swipe_right": "昼寝を強制: 幸福 +20%, 予算 -15%",
+        "swipe_left": "昼寝を拒否: 予算 +10%, 幸福 -10%",
+        "extra_effect_right": "十分に休んだ市民は、1日間幸福に30%のボーナスを与えます。",
+        "extra_effect_left": "休息不足は、1日間幸福に20%のペナルティをもたらします。"
+      },
+      "zh": {
+        "title": "强制午睡法",
+        "description": "要求所有市民中午必须小睡一会儿。生产力下降，但士气上升。请明智选择！",
+        "swipe_right": "执行午睡：幸福 +20%，预算 -15%",
+        "swipe_left": "拒绝午睡：预算 +10%，幸福 -10%",
+        "extra_effect_right": "充分休息使幸福在1天内提升30%。",
+        "extra_effect_left": "缺乏休息使幸福在1天内降低20%。"
+      },
+      "ru": {
+        "title": "Обязательный дневной сон",
+        "description": "Обязать всех граждан вздремнуть в полдень. Производительность падает, но настроение улучшается. Выбирайте мудро!",
+        "swipe_right": "Обязать сон: Счастье +20%, Бюджет -15%",
+        "swipe_left": "Отказаться от сна: Бюджет +10%, Счастье -10%",
+        "extra_effect_right": "Хороший сон повышает счастье на 30% на 1 день.",
+        "extra_effect_left": "Недостаток сна снижает счастье на 20% на 1 день."
+      },
+      "hi": {
+        "title": "अनिवार्य दोपहर की झपकी कानून",
+        "description": "सभी नागरिकों के लिए दोपहर की झपकी अनिवार्य करें। उत्पादकता घटती है, लेकिन उत्साह बढ़ता है। बुद्धिमानी से चुनें!",
+        "swipe_right": "झपकी लागू करें: खुशी +20%, बजट -15%",
+        "swipe_left": "झपकी अस्वीकार करें: बजट +10%, खुशी -10%",
+        "extra_effect_right": "अच्छी नींद से 1 दिन के लिए खुशी में 30% का बोनस मिलता है।",
+        "extra_effect_left": "अपर्याप्त नींद से 1 दिन के लिए खुशी में 20% की कमी होती है।"
+      }
+    }
+  ]
+  

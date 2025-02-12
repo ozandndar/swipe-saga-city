@@ -1,39 +1,57 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
+import { useEffect, useState } from 'react';
+import { Stack, useRouter } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import { ThemeProvider } from '@/providers/ThemeProvider';
+import { SplashScreen as CustomSplashScreen } from '@/screens/SplashScreen';
+import { LoadingScreen } from '@/screens/LoadingScreen';
+import '../src/i18n';
+import { useLanguageStore } from '@/stores/languageStore';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { useDilemmaStore } from '@/stores/dilemmaStore';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
+// Prevent the splash screen from auto-hiding
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+  const [isReady, setIsReady] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const initLanguage = useLanguageStore(state => state.initLanguage);
+  const fetchDilemmas = useDilemmaStore(state => state.fetchDilemmas);
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
+    const prepare = async () => {
+      try {
+        await initLanguage();
+        await Promise.all([
+          new Promise(resolve => setTimeout(resolve, 2500)),
+        ]);
+        setIsReady(true);
+        await SplashScreen.hideAsync();
+        await new Promise(resolve => setTimeout(resolve, 2500));
+        setIsLoading(false);
+      } catch (e) {
+        console.warn(e);
+      }
+    };
 
-  if (!loaded) {
-    return null;
-  }
+    prepare();
+  }, []);
+
+  useEffect(() => {
+    fetchDilemmas();
+  }, []);
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <ThemeProvider>
+        {!isReady ? (
+          <CustomSplashScreen />
+        ) : isLoading ? (
+          <LoadingScreen />
+        ) : (
+          <Stack screenOptions={{ headerShown: false }} />
+        )}
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 }
