@@ -23,8 +23,6 @@ export function EffectBanner() {
 
   if (!activeEffect) return null;
 
-  return <>test</>;
-
   const isBonus = activeEffect.bonus > 0;
   const icon = {
     happiness: 'heart',
@@ -35,20 +33,20 @@ export function EffectBanner() {
   return (
     <Pressable style={[
       styles.container,
-      { backgroundColor: isBonus ? 'rgba(76, 175, 80, 0.15)' : 'rgba(244, 67, 54, 0.15)' }
+      { backgroundColor: isBonus ? 'rgba(76, 175, 80, 0.35)' : 'rgba(244, 67, 54, 0.35)' }
     ]}>
-      {/* <AnimatedView 
+      <AnimatedView 
         style={[
           styles.progressBar, 
-          { backgroundColor: isBonus ? 'rgba(76, 175, 80, 0.3)' : 'rgba(244, 67, 54, 0.3)' },
+          { backgroundColor: isBonus ? 'rgba(76, 175, 80, 0.5)' : 'rgba(244, 67, 54, 0.5)' },
           progressStyle
         ]} 
-      /> */}
+      />
       <View style={styles.darkOverlay} />
       <View style={styles.content}>
         <Ionicons 
           name={icon as any} 
-          size={24} 
+          size={28} 
           color={isBonus ? '#4CAF50' : '#F44336'} 
         />
         <Text style={styles.text}>
@@ -63,18 +61,19 @@ const styles = StyleSheet.create({
   container: {
     position: 'absolute',
     bottom: 20,
-    alignSelf: 'center',
-    borderRadius: 25,
+    left: 0,
+    right: 0,
+    borderRadius: 0,
     overflow: 'hidden',
-    maxWidth: '60%',
-    minWidth: 150,
-    elevation: 5,
+    elevation: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    shadowOpacity: 0.5,
+    shadowRadius: 8,
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
+    zIndex: 100,
   },
   progressBar: {
     position: 'absolute',
@@ -85,8 +84,9 @@ const styles = StyleSheet.create({
   content: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
-    padding: 12,
+    justifyContent: 'center',
+    gap: 12,
+    padding: 16,
   },
   darkOverlay: {
     position: 'absolute',
@@ -94,13 +94,12 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
   },
   text: {
     color: '#FFFFFF',
-    flex: 1,
-    fontSize: 14,
-    fontWeight: '500',
+    fontSize: 16,
+    fontWeight: '600',
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
