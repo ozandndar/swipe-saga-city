@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import * as Localization from 'expo-localization';
+import { getLocales } from 'expo-localization';
 
 const resources = {
   en: { translation: require('../locales/en').default },
@@ -16,11 +16,14 @@ const resources = {
   hi: { translation: require('../locales/hi').default },
 };
 
+// Get device locale using the new API
+const deviceLanguage = getLocales()[0]?.languageCode || 'en';
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: Localization.locale.split('-')[0] || 'en',
+    lng: deviceLanguage,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,

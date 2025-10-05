@@ -1,25 +1,10 @@
 import { create } from 'zustand';
 import { clampStats } from '@/utils/stats';
 import { GAME_RULES } from '@/constants/gameRules';
-
-interface DilemmaHistory {
-  dilemmaId: string;
-  day: number;
-  choice: 'left' | 'right';
-  stats: {
-    health: number;
-    budget: number;
-    environment: number;
-  };
-  extraEffect: string;
-  effectStats: {
-    bonus_type: 'happiness' | 'budget' | 'environment';
-    bonus: number;
-  };
-}
+import { DilemmaHistory } from '@/types/dilemma';
 
 interface GameState {
-  health: number;
+  happiness: number;
   budget: number;
   environment: number;
   day: number;
@@ -29,7 +14,7 @@ interface GameState {
   isTimerPaused: boolean;
   timeLeft: number;
   timer: ReturnType<typeof setInterval> | null;
-  setStats: (stats: Partial<Pick<GameState, 'health' | 'budget' | 'environment'>>) => void;
+  setStats: (stats: Partial<Pick<GameState, 'happiness' | 'budget' | 'environment'>>) => void;
   incrementDay: () => void;
   setDayComplete: (complete: boolean) => void;
   addToHistory: (entry: DilemmaHistory) => void;
@@ -49,7 +34,7 @@ interface GameState {
 }
 
 const DEFAULT_STATS = {
-  health: 50,
+  happiness: 50,
   budget: 50,
   environment: 50,
   day: 1,
@@ -69,18 +54,18 @@ export const useGameStore = create<GameState>((set, get) => ({
     if (state.isGameOver) return state;
 
     const clampedStats = {
-      health: clampStats(stats.health !== undefined ? stats.health : state.health),
+      happiness: clampStats(stats.happiness !== undefined ? stats.happiness : state.happiness),
       budget: clampStats(stats.budget !== undefined ? stats.budget : state.budget),
       environment: clampStats(stats.environment !== undefined ? stats.environment : state.environment),
     };
 
     const shouldGameOver = 
-      clampedStats.health <= 0 || 
+      clampedStats.happiness <= 0 || 
       clampedStats.budget <= 0 || 
       clampedStats.environment <= 0;
 
     return {
-      health: clampedStats.health,
+      happiness: clampedStats.happiness,
       budget: clampedStats.budget,
       environment: clampedStats.environment,
       isGameOver: shouldGameOver,

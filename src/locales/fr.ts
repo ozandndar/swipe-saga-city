@@ -7,7 +7,7 @@ export default {
     close: 'Fermer',
   },
   stats: {
-    health: 'Santé',
+    happiness: 'Santé',
     budget: 'Budget',
     environment: 'Environnement',
   },
@@ -17,7 +17,7 @@ export default {
   },
   gameOver: {
     title: 'Partie Terminée',
-    healthFailed: 'Le bonheur de votre ville est tombé à des niveaux critiques. Les citoyens ont perdu foi en votre leadership.',
+    happinessFailed: 'Le bonheur de votre ville est tombé à des niveaux critiques. Les citoyens ont perdu foi en votre leadership.',
     budgetFailed: 'La ville a fait faillite. Votre mandat de maire est terminé.',
     environmentFailed: 'Une catastrophe environnementale a frappé la ville. Votre administration a échoué à protéger la planète.',
     restart: 'Nouvelle Partie'

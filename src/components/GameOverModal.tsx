@@ -5,13 +5,13 @@ import { useGameStore } from '@/stores/gameStore';
 import { useRouter } from 'expo-router';
 
 export function GameOverModal() {
-  const { isGameOver, health, budget, environment, resetGame } = useGameStore();
+  const { isGameOver, happiness, budget, environment, resetGame } = useGameStore();
   const { t } = useTranslation();
   const router = useRouter();
 
   console.log('[GameOverModal] Render:', { 
     isGameOver, 
-    health, 
+    happiness, 
     budget, 
     environment 
   });
@@ -19,8 +19,8 @@ export function GameOverModal() {
   if (!isGameOver) return null;
 
   let failureMessage = '';
-  if (health <= 0) {
-    failureMessage = t('gameOver.healthFailed');
+  if (happiness <= 0) {
+    failureMessage = t('gameOver.happinessFailed');
   } else if (budget <= 0) {
     failureMessage = t('gameOver.budgetFailed');
   } else if (environment <= 0) {

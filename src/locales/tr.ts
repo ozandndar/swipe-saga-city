@@ -7,7 +7,7 @@ export default {
     close: 'Kapat',
   },
   stats: {
-    health: 'Sağlık',
+    happiness: 'Sağlık',
     budget: 'Bütçe',
     environment: 'Çevre',
   },
@@ -17,7 +17,7 @@ export default {
   },
   gameOver: {
     title: 'Oyun Bitti',
-    healthFailed: 'Şehrinizin mutluluğu kritik seviyelere düştü. Vatandaşlar liderliğinize olan inancını kaybetti.',
+    happinessFailed: 'Şehrinizin mutluluğu kritik seviyelere düştü. Vatandaşlar liderliğinize olan inancını kaybetti.',
     budgetFailed: 'Şehir iflas etti. Belediye başkanlığı göreviniz sona erdi.',
     environmentFailed: 'Şehirde çevre felaketi yaşandı. Yönetiminiz gezegeni korumakta başarısız oldu.',
     restart: 'Yeni Oyun Başlat'

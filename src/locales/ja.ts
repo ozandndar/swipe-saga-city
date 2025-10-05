@@ -7,7 +7,7 @@ export default {
     close: '閉じる',
   },
   stats: {
-    health: '健康',
+    happiness: '健康',
     budget: '予算',
     environment: '環境',
   },
@@ -17,7 +17,7 @@ export default {
   },
   gameOver: {
     title: 'ゲームオーバー',
-    healthFailed: '市民の幸福度が危機的なレベルまで低下しました。市民はあなたの指導力への信頼を失いました。',
+    happinessFailed: '市民の幸福度が危機的なレベルまで低下しました。市民はあなたの指導力への信頼を失いました。',
     budgetFailed: '市は破産しました。市長としての任期は終了しました。',
     environmentFailed: '環境災害が市を襲いました。あなたの行政は地球を守ることに失敗しました。',
     restart: '新しいゲームを開始'

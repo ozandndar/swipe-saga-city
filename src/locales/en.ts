@@ -7,7 +7,7 @@ export default {
     close: 'Close',
   },
   stats: {
-    health: 'Health',
+    happiness: 'happiness',
     budget: 'Budget',
     environment: 'Environment',
   },
@@ -17,7 +17,7 @@ export default {
   },
   gameOver: {
     title: 'Game Over',
-    healthFailed: 'Your city\'s happiness has fallen to critical levels. The citizens have lost faith in your leadership.',
+    happinessFailed: 'Your city\'s happiness has fallen to critical levels. The citizens have lost faith in your leadership.',
     budgetFailed: 'The city has gone bankrupt. Your term as mayor has come to an end.',
     environmentFailed: 'Environmental disaster has struck the city. Your administration has failed to protect the planet.',
     restart: 'Start New Game'

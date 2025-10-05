@@ -31,3 +31,12 @@ export type Dilemma = {
 } & {
   [K in LanguageCode]: DilemmaContent;
 }; 
+
+export interface DilemmaHistory {
+  dilemmaId: string;
+  day: number;
+  choice: 'left' | 'right';
+  stats: DilemmaStats;
+  extraEffect: string;
+  effectStats: ExtraEffectStats;
+}

@@ -39,7 +39,7 @@ interface StatsBarProps {
 
 export function StatsBar({ onTimeChange }: StatsBarProps) {
   const { t } = useTranslation();
-  const { health, budget, environment } = useGameStore();
+  const { happiness, budget, environment } = useGameStore();
   const [currentTime, setCurrentTime] = useState(0);
 
   const updateTime = useCallback((time: number) => {
@@ -73,7 +73,7 @@ export function StatsBar({ onTimeChange }: StatsBarProps) {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <View style={styles.statsContainer}>
-          <StatItem icon="heart" value={health} color="#FF5B5B" />
+          <StatItem icon="heart" value={happiness} color="#FF5B5B" />
           <StatItem icon="cash" value={budget} color="#FFD700" />
           <StatItem icon="leaf" value={environment} color="#2ECC71" />
         </View>

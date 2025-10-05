@@ -22,6 +22,8 @@ import Animated, {
 import { useRouter } from 'expo-router';
 import { GAME_RULES } from '@/constants/gameRules';
 import { Ionicons } from '@expo/vector-icons';
+import { useEffectStore } from '@/stores/effectStore';
+import { EffectBanner } from '@/components/EffectBanner';
 
 const AnimatedImageBackground = Animated.createAnimatedComponent(ImageBackground);
 
@@ -50,7 +52,7 @@ export default function Chapter1() {
         setDayComplete,
         incrementDay,
         addToHistory,
-        health,
+        happiness,
         budget,
         environment,
         dilemmaHistory,
@@ -64,6 +66,7 @@ export default function Chapter1() {
         completeChapter,
         getDayDuration
     } = useGameStore();
+    const { activeEffect, generateEffectFromHistory } = useEffectStore();
     const DILEMMAS_PER_DAY = 3;
     const router = useRouter();
 
@@ -125,21 +128,40 @@ export default function Chapter1() {
         overlayOpacity.set(opacity);
     }, []);
 
+    // Generate effect when day completes
+    useEffect(() => {
+        if (isDayComplete) {
+            generateEffectFromHistory(dilemmaHistory);
+        }
+    }, [isDayComplete]);
+
+    // Apply effect multiplier to stats changes
+    const applyEffectMultiplier = (stats: any) => {
+        if (!activeEffect) return stats;
+
+        const multiplier = 1 + (activeEffect.bonus / 100);
+        return {
+            ...stats,
+            [activeEffect.bonus_type]: Math.round(stats[activeEffect.bonus_type] * multiplier)
+        };
+    };
+
     const handleSwipeLeft = (dilemma: Dilemma) => {
         const content = dilemma[i18n.language as keyof typeof dilemma] as DilemmaContent || dilemma.en as DilemmaContent;
 
-        // Apply stats changes
-        setStats({
-            health: health + dilemma.swipe_left_stats.happiness,
+        const stats = {
+            happiness: happiness + dilemma.swipe_left_stats.happiness,
             budget: budget + dilemma.swipe_left_stats.budget,
             environment: environment + dilemma.swipe_left_stats.environment
-        });
+        };
+
+        setStats(applyEffectMultiplier(stats));
 
         addToHistory({
             dilemmaId: dilemma.id,
             day,
             choice: 'left',
-            stats: { health, budget, environment },
+            stats: stats,
             extraEffect: content.extra_effect_left,
             effectStats: dilemma.extra_effect_left_stats
         });
@@ -151,7 +173,7 @@ export default function Chapter1() {
 
         // Apply stats changes
         setStats({
-            health: health + dilemma.swipe_right_stats.happiness,
+            happiness: happiness + dilemma.swipe_right_stats.happiness,
             budget: budget + dilemma.swipe_right_stats.budget,
             environment: environment + dilemma.swipe_right_stats.environment
         });
@@ -160,7 +182,7 @@ export default function Chapter1() {
             dilemmaId: dilemma.id,
             day,
             choice: 'right',
-            stats: { health, budget, environment },
+            stats: dilemma.swipe_right_stats,
             extraEffect: content.extra_effect_right,
             effectStats: dilemma.extra_effect_right_stats
         });
@@ -271,6 +293,7 @@ export default function Chapter1() {
                 onClose={() => setIsSettingsVisible(false)}
             />
             <GameOverModal />
+            <EffectBanner />
         </View>
     );
 }

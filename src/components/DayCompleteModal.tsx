@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 const { width } = Dimensions.get('window');
 
 export function DayCompleteModal() {
-  const { isDayComplete, day, health, budget, environment, incrementDay } = useGameStore();
+  const { isDayComplete, day, happiness, budget, environment, incrementDay } = useGameStore();
   const { t } = useTranslation();
   const [isProcessing, setIsProcessing] = useState(false);
 
@@ -49,8 +49,8 @@ export function DayCompleteModal() {
           <View style={styles.statsContainer}>
             <View style={styles.statRow}>
               <Ionicons name="heart" size={24} color="#FF5B5B" />
-              <Text style={styles.statLabel}>{t('stats.health')}:</Text>
-              <Text style={[styles.statValue, { color: '#FF5B5B' }]}>{health}%</Text>
+              <Text style={styles.statLabel}>{t('stats.happiness')}:</Text>
+              <Text style={[styles.statValue, { color: '#FF5B5B' }]}>{happiness}%</Text>
             </View>
             <View style={styles.statRow}>
               <Ionicons name="cash" size={24} color="#FFD700" />

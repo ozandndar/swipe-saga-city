@@ -206,7 +206,7 @@
     - Tap to deploy emergency resources in correct order
     - Penalty: -25 mixed stats if response fails
     - Uses: Multi-touch event handling
-  - [ ] Health System Manager
+  - [ ] happiness System Manager
     - Connect hospitals to affected areas during outbreaks
     - Penalty: -20 Happiness and Budget if spread occurs
     - Uses: Network visualization system

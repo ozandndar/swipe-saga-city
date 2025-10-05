@@ -7,7 +7,7 @@ export default {
     close: 'Cerrar',
   },
   stats: {
-    health: 'Salud',
+    happiness: 'Salud',
     budget: 'Presupuesto',
     environment: 'Ambiente',
   },
@@ -17,7 +17,7 @@ export default {
   },
   gameOver: {
     title: 'Fin del Juego',
-    healthFailed: 'La felicidad de tu ciudad ha caído a niveles críticos. Los ciudadanos han perdido la fe en tu liderazgo.',
+    happinessFailed: 'La felicidad de tu ciudad ha caído a niveles críticos. Los ciudadanos han perdido la fe en tu liderazgo.',
     budgetFailed: 'La ciudad ha quebrado. Tu mandato como alcalde ha llegado a su fin.',
     environmentFailed: 'Un desastre ambiental ha golpeado la ciudad. Tu administración ha fallado en proteger el planeta.',
     restart: 'Iniciar Nuevo Juego'
